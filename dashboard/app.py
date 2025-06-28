@@ -13,7 +13,7 @@ st.markdown("An interactive dashboard for job intelligence scraped from various 
 # Load data
 DATA_PATH = os.path.join("..", "data", "jobs.csv")
 try:
-    df = pd.read_csv(DATA_PATH)
+    df = pd.read_csv('data/jobs.csv')
 except Exception as e:
     st.error(f"⚠️ Could not load data: {e}")
     st.stop()
